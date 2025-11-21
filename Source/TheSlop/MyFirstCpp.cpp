@@ -24,7 +24,7 @@ void AMyFirstCpp::Patatje()
 void AMyFirstCpp::BeginPlay()
 {
 	Super::BeginPlay();
-
+	
 	if (shouldDestroy)
 	{
 		UKismetSystemLibrary::PrintString(GetWorld(), deleteTextPrefix + *myActor->GetName());

@@ -30,6 +30,8 @@ void AMyInputActorThing::SetupPlayerInputComponent(class UInputComponent* Player
 void AMyInputActorThing::Action()
 {
 	UKismetSystemLibrary::PrintString(GetWorld(), inputText);
+	const FVector yes (50, 0, 0);
+	this->SetActorLocation(this->GetActorLocation() + yes);
 }
 
 // Called every frame
